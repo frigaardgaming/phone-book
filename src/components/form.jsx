@@ -11,7 +11,7 @@ export default function Form() {
             <input type="email" name="" id="" />
 
             <label htmlFor="phone">Telefon:</label>
-            <input type="text" name="" id="" />
+            <input type="tel" pattern="[0-9]{8}" name="" id="" />
 
             <label htmlFor="company">Firma:</label>
             <input type="text" name="" id=""/>
@@ -19,7 +19,7 @@ export default function Form() {
             <label htmlFor="position">Stilling:</label>
             <input type="text" name="" id="" />
 
-            
+            <button type="submit">Opret ny kontakt</button>
 
         </form>
       );
