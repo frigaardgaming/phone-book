@@ -1,23 +1,25 @@
 export default function Form() {
     return (
         <form>
-            <label>Fornavn:</label>
+            <label htmlFor="firstname">Fornavn:</label>
             <input type="text" />
 
-            <label>Efternavn:</label>
+            <label htmlFor="lastname">Efternavn:</label>
             <input type="text" />
 
-            <label>E-mail:</label>
+            <label htmlFor="email">E-mail:</label>
             <input type="email" name="" id="" />
 
-            <label>Telefon:</label>
+            <label htmlFor="phone">Telefon:</label>
             <input type="text" name="" id="" />
 
-            <label>Firma:</label>
+            <label htmlFor="company">Firma:</label>
             <input type="text" name="" id=""/>
 
-            <label>Stilling:</label>
+            <label htmlFor="position">Stilling:</label>
             <input type="text" name="" id="" />
+
+            
 
         </form>
       );
