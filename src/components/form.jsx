@@ -13,6 +13,12 @@ export default function Form() {
             <label>Telefon:</label>
             <input type="text" name="" id="" />
 
+            <label>Firma:</label>
+            <input type="text" name="" id="" />
+
+            <label>Stilling:</label>
+            <input type="text" name="" id="" />
+
         </form>
       );
     }
