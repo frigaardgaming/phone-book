@@ -1,13 +1,18 @@
-export default function Form(props) {
+export default function Form() {
     return (
+        <form>
+            <label>Fornavn:</label>
+            <input type="text" />
 
-        <div style={{
-            backgroundColor: props.color,
-        }}
-        
-        
-        className="form">
-            {props.message}
-        </div>
-    )
-}
+            <label>Efternavn:</label>
+            <input type="text" />
+
+            <label>E-mail:</label>
+            <input type="email" name="" id="" />
+
+            <label>Telefon:</label>
+            <input type="text" name="" id="" />
+
+        </form>
+      );
+    }
