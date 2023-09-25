@@ -30,7 +30,7 @@ export default function MyForm() {
           <input 
             type="text" 
             name="firstname" 
-            value={inputs.firstname || ""} 
+            value={inputs.firstname} 
             onChange={handleChange}
           />
         </label>
@@ -38,7 +38,7 @@ export default function MyForm() {
           <input 
             type="text" 
             name="lastname" 
-            value={inputs.lastname || ""} 
+            value={inputs.lastname} 
             onChange={handleChange}
           />
         </label>
@@ -46,7 +46,7 @@ export default function MyForm() {
           <input 
             type="email" 
             name="email" 
-            value={inputs.email || ""} 
+            value={inputs.email} 
             onChange={handleChange}
           />
         </label>
@@ -54,7 +54,7 @@ export default function MyForm() {
           <input 
             type="tel" 
             name="phone" 
-            value={inputs.phone || ""} 
+            value={inputs.phone} 
             onChange={handleChange}
           />
         </label>
@@ -62,7 +62,7 @@ export default function MyForm() {
           <input 
             type="text" 
             name="firm" 
-            value={inputs.firm || ""} 
+            value={inputs.firm} 
             onChange={handleChange}
           />
         </label>
@@ -70,7 +70,7 @@ export default function MyForm() {
           <input 
             type="text" 
             name="position" 
-            value={inputs.position || ""} 
+            value={inputs.position} 
             onChange={handleChange}
           />
         </label>
