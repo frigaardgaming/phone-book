@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function MyForm() {
+export default function MyForm() {
   const [inputs, setInputs] = useState({});
   const [contacts, setContacts] = useState([]); //! Til at gemme kontakter
   const [submittedData, setSubmittedData] = useState(null);
@@ -104,5 +104,3 @@ function MyForm() {
     </div>
   );
 }
-
-export default MyForm;
