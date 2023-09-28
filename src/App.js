@@ -4,6 +4,7 @@ import "./styles/container.css";
 import "./styles/button.css";
 import "./styles/contacts.css"
 import "./styles/modal.css"
+import "./styles/list.css"
 
 function App() {
   return (
