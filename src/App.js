@@ -1,20 +1,16 @@
 import './App.css';
-import Form from './components/form';
-import React from 'react';
-import MyForm from './components/myForm';
-
+import MainContent from './components/MainContent';
+import "./styles/container.css";
+import "./styles/button.css";
+import "./styles/contacts.css"
+import "./styles/modal.css"
 
 function App() {
-  const data = [
-
-  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <MyForm/>
-      </header>
+    <div className="container">
+      <header></header>
+      <MainContent></MainContent>
     </div>
-
   );
 }
 

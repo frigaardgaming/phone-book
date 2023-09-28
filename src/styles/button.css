@@ -1,0 +1,17 @@
+.add-button{
+    background-color: #F9B233;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.closeButton {
+    color: red!important;
+}
