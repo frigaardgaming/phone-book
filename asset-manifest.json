@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/phone-book/static/css/main.53628bac.css",
+    "main.js": "/phone-book/static/js/main.42b96e74.js",
+    "static/js/787.4151f0f6.chunk.js": "/phone-book/static/js/787.4151f0f6.chunk.js",
+    "index.html": "/phone-book/index.html",
+    "main.53628bac.css.map": "/phone-book/static/css/main.53628bac.css.map",
+    "main.42b96e74.js.map": "/phone-book/static/js/main.42b96e74.js.map",
+    "787.4151f0f6.chunk.js.map": "/phone-book/static/js/787.4151f0f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53628bac.css",
+    "static/js/main.42b96e74.js"
+  ]
+}
