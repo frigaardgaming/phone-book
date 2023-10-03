@@ -11,6 +11,9 @@ export default function AddContact({contacts, setContacts}) {
   const [company, setCompany] = useState("");
   const [position, setPosition] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const []
+
+  let isValid = content.trim() !== '';
 
   const handleFirstnameChange = (e) => {
     setFirstname(e.target.value);
@@ -58,6 +61,7 @@ export default function AddContact({contacts, setContacts}) {
 
 
   return (
+    
     <div>
       <ReactModal className="modal" isOpen={isOpen}>
         <label className='title'>Create new contact</label>
@@ -71,6 +75,7 @@ export default function AddContact({contacts, setContacts}) {
             placeholder="Firstname"
             value={firstname}
             onChange={handleFirstnameChange}
+            required
         />
         <input
             type="text"
