@@ -11,9 +11,6 @@ export default function AddContact({contacts, setContacts}) {
   const [company, setCompany] = useState("");
   const [position, setPosition] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-  const []
-
-  let isValid = content.trim() !== '';
 
   const handleFirstnameChange = (e) => {
     setFirstname(e.target.value);
