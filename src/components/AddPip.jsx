@@ -32,21 +32,40 @@ export default function AddContact({contacts, setContacts}) {
     setPosition(e.target.value);
   };
   
-  
+
   const handleAddContact = () => {
-    const newContact = new Contacts(firstname, lastname, email, phone, company, position);
-    setContacts([...contacts, newContact]);
-
-    // Tømmer input felter
-    setFirstname("");
-    setLastname("");
-    setEmail("");
-    setPhone("");
-    setCompany("");
-    setPosition("");
-
-    handleCloseModal();
+    const c = new Contacts(firstname, lastname, email, phone, company, position);
+    newContact(c)
   };
+
+  const newContact = async (contact) => {
+    const anonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndiaW1zZ3pneGFoaGx0cGJ2d2x1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTkyNzc3NTAsImV4cCI6MjAxNDg1Mzc1MH0.bR_zj_y7vzf7fvsW-N-6126mAyKquznFzvDur-m-_mw'
+    fetch ('https://wbimsgzgxahhltpbvwlu.supabase.co/rest/v1/contactlist', {
+      method: 'POST',
+      body: JSON.stringify(contact),
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: anonKey,
+        Authorization: `Bearer ${anonKey}`,
+        'Prefer': 'return=representation',
+      }
+    }).then(response => response.json())
+    .then(newContact => {
+      setContacts([...contacts, newContact[0]]);
+      
+          //* Tømmer input felter
+          setFirstname("");
+          setLastname("");
+          setEmail("");
+          setPhone("");
+          setCompany("");
+          setPosition("");
+      
+          handleCloseModal();
+        
+
+    })
+  }
 
   function handleOpenModal() {
     setIsOpen(true);
